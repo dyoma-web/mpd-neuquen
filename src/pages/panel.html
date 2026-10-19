@@ -1,0 +1,80 @@
+---
+title: Resumen y revisión
+description: Panel interno de la Defensa: métricas anónimas y conversaciones para revisar.
+page: Panel
+panel: resumen
+scripts: panel.js
+---
+<div class="app">
+{{panelSide}}
+
+<main id="contenido" class="main">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px">
+<div style="display:flex;flex-direction:column;gap:4px"><h1 class="h1">Resumen</h1><span class="small muted">Métricas anónimas: no se registran datos personales.</span></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px">
+<span class="tag" style="background:#F3EEE6;color:#6B4A1E">Datos ficticios para el taller</span>
+<label class="small" for="periodo" style="font-weight:700">Período</label>
+<select id="periodo" style="min-height:44px;padding:0 12px;border-radius:8px;border:1.5px solid #8A979E;font:inherit;background:#fff"><option>Últimos 30 días</option><option>Últimos 7 días</option><option>Desde el lanzamiento</option></select>
+<button type="button" class="btn" data-demo="El informe se descargaría en PDF y en CSV. En el prototipo no se genera.">Descargar informe</button>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(190px,100%),1fr));gap:12px">
+<div class="card" style="display:flex;flex-direction:column;gap:4px"><span class="small muted">Conversaciones</span><span class="kpi-v">1.284</span><span class="small muted">Sesiones iniciadas</span></div>
+<div class="card" style="display:flex;flex-direction:column;gap:4px"><span class="small muted">Resueltas por el asistente</span><span class="kpi-v">71 %</span><span class="small muted">Terminaron en una ficha</span></div>
+<div class="card" style="display:flex;flex-direction:column;gap:4px"><span class="small muted">Derivadas a una persona</span><span class="kpi-v">18 %</span><span class="small muted">Pidieron atención humana</span></div>
+<div class="card" style="display:flex;flex-direction:column;gap:4px"><span class="small muted">«No lo sé»</span><span class="kpi-v">6 %</span><span class="small muted">Sin información validada</span></div>
+<div class="card" style="display:flex;flex-direction:column;gap:4px;border-color:#E7C3B3"><span class="small muted">Protocolo de urgencia</span><span class="kpi-v" style="color:#8F3A1C">23</span><span class="small muted">Activaciones</span></div>
+<div class="card" style="display:flex;flex-direction:column;gap:4px"><span class="small muted">Valoración positiva</span><span class="kpi-v">84 %</span><span class="small muted">De las respuestas valoradas</span></div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));gap:14px">
+<section class="card" style="display:flex;flex-direction:column;gap:12px">
+<h2 class="h2">Temas más consultados</h2>
+<div class="barrow"><span>Familia y vivienda</span><span class="track"><span class="fill" style="width:38%"></span></span><span>38 %</span></div>
+<div class="barrow"><span>Defensa penal</span><span class="track"><span class="fill" style="width:24%"></span></span><span>24 %</span></div>
+<div class="barrow"><span>Violencias</span><span class="track"><span class="fill" style="width:14%"></span></span><span>14 %</span></div>
+<div class="barrow"><span>Niñez y adolescencia</span><span class="track"><span class="fill" style="width:9%"></span></span><span>9 %</span></div>
+<div class="barrow"><span>Salud mental</span><span class="track"><span class="fill" style="width:6%"></span></span><span>6 %</span></div>
+<div class="barrow"><span>Otros temas</span><span class="track"><span class="fill" style="width:9%"></span></span><span>9 %</span></div>
+</section>
+<section class="card" style="display:flex;flex-direction:column;gap:12px">
+<h2 class="h2">Cómo consultan y cuándo</h2>
+<div style="display:flex;flex-direction:column;gap:6px">
+<span class="small" style="font-weight:700">Forma de consulta</span>
+<div style="display:flex;height:16px;border-radius:8px;overflow:hidden" role="img" aria-label="Menús guiados 62 %, texto libre 38 %"><span style="width:62%;background:#24505C"></span><span style="width:38%;background:#9FC0C7"></span></div>
+<span class="small muted">Menús guiados 62 % · Texto libre 38 %</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;margin-top:6px">
+<span class="small" style="font-weight:700">Horario de las consultas</span>
+<div style="display:flex;align-items:flex-end;gap:10px;height:96px" role="img" aria-label="Consultas por franja horaria: la mayor parte entre las 8 y las 14">
+<span style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;height:100%"><span style="height:46%;background:#9FC0C7;border-radius:4px 4px 0 0"></span><span class="small muted" style="text-align:center">0 a 8</span></span>
+<span style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;height:100%"><span style="height:88%;background:#24505C;border-radius:4px 4px 0 0"></span><span class="small muted" style="text-align:center">8 a 14</span></span>
+<span style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;height:100%"><span style="height:64%;background:#9FC0C7;border-radius:4px 4px 0 0"></span><span class="small muted" style="text-align:center">14 a 20</span></span>
+<span style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;height:100%"><span style="height:52%;background:#9FC0C7;border-radius:4px 4px 0 0"></span><span class="small muted" style="text-align:center">20 a 24</span></span>
+</div>
+<span class="small">31 % de las consultas llegan fuera del horario de atención.</span>
+</div>
+</section>
+</div>
+
+<section id="revision" class="card" style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px">
+<h2 class="h2">Conversaciones para revisar</h2>
+<span class="small muted"><span data-pendientes>6</span> pendientes · revisión <span style="background:#F3EEE6;color:#6B4A1E;padding:0 4px;border-radius:3px">[frecuencia a definir]</span></span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px" role="group" aria-label="Filtrar" data-filtros></div>
+<ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column" data-items></ul>
+<p class="small muted" style="margin:0;padding:12px 0" data-vacio hidden>No hay conversaciones pendientes en este filtro.</p>
+<p class="small muted" style="margin:0" role="status" data-live></p>
+</section>
+
+<section id="instalacion" class="card" style="display:flex;flex-wrap:wrap;gap:16px 32px">
+<div style="flex:1 1 300px;display:flex;flex-direction:column;gap:6px"><h2 class="h2">Instalación en el sitio actual</h2><p class="small muted" style="margin:0">El equipo informático del MPD pega esta línea en su sitio para mostrar la ventana flotante. Sin intervenir la plataforma existente.</p></div>
+<div style="flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:8px">
+<div style="padding:14px 16px;border-radius:8px;background:#1F2933;color:#E3EEF0;overflow-x:auto"><code>&lt;script src="<span data-ventana-src>https://asistente.[dominio]/assets/js/ventana.js</span>" defer&gt;&lt;/script&gt;</code></div>
+<span class="small muted">Alternativa mínima: un banner con enlace a <code>https://asistente.[dominio]</code>. <a href="ventana.html">Ver cómo se ve en el sitio</a>.</span>
+</div>
+</section>
+</main>
+</div>

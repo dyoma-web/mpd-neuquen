@@ -1,0 +1,9 @@
+dist/
+node_modules/
+# Export original de Claude Design (referencia local, no se publica)
+Prototipo_chatbot_MPD_Neuquen.html
+.DS_Store
+Thumbs.db
+
+# SQL con el codigo de sesion real (no se publica)
+supabase/*.local.sql
