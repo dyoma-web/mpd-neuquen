@@ -8,7 +8,7 @@
 (function () {
   'use strict';
   const CFG = window.MPD_REVIEW;
-  if (!CFG || window.top !== window) return;
+  if (!CFG || document.documentElement.classList.contains('proto-embed')) return;
   const LS = 'mpd-review';
   const params = new URLSearchParams(location.search);
   const ls = {

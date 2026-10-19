@@ -193,3 +193,9 @@ kbd { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .85em; p
 .skip:focus { left: 8px; outline: 3px solid #F2C6B1; }
 .demo-toast { position: fixed; left: 50%; bottom: 84px; transform: translate(-50%, 20px); max-width: min(520px, calc(100vw - 32px)); padding: 12px 18px; border-radius: 10px; background: #183A43; color: #fff; font: 15px/1.45 'Atkinson Hyperlegible', Verdana, sans-serif; box-shadow: 0 10px 26px rgba(30,37,45,.3); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 1500; }
 .demo-toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+
+/* En modo revisión, la navegación del prototipo sube para no quedar bajo la barra */
+body.rv-active .proto-btn { bottom: 76px; }
+body.rv-active .proto-panel { bottom: 132px; }
+body.rv-active .wg-launch { bottom: 76px; }
+body.rv-active .wg-win, body.rv-active .wg-bubble { bottom: 152px; height: min(560px, calc(100vh - 190px)); }
