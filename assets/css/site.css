@@ -195,7 +195,9 @@ kbd { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .85em; p
 .demo-toast.is-on { opacity: 1; transform: translate(-50%, 0); }
 
 /* En modo revisión, la navegación del prototipo sube para no quedar bajo la barra */
-body.rv-active .proto-btn { bottom: 76px; }
-body.rv-active .proto-panel { bottom: 132px; }
+/* (en la ventana flotante el botón va arriba, así que ahí no se toca) */
+body.rv-active:not([data-page="Widget"]) .proto-btn { bottom: 76px; }
+body.rv-active:not([data-page="Widget"]) .proto-panel { bottom: 132px; }
 body.rv-active .wg-launch { bottom: 76px; }
-body.rv-active .wg-win, body.rv-active .wg-bubble { bottom: 152px; height: min(560px, calc(100vh - 190px)); }
+body.rv-active .wg-win { bottom: 152px; height: min(560px, calc(100vh - 230px)); }
+body.rv-active .wg-bubble { bottom: 152px; }
